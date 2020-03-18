@@ -38,9 +38,13 @@ public class TwoStackToQue {
 
         System.out.println("取出元素为" + t.pop());
 
+        outPutResult(t.stack1, t.stack2);
+    }
+
+    public static void outPutResult(Stack<Integer> stackOut1, Stack<Integer> stackOut2){
         System.out.print("stack1中的元素为 ");
-        Stack<Integer> stackTemp = t.stack1;
-        int stack1OverPush = t.stack1.size();
+        Stack<Integer> stackTemp = stackOut1;
+        int stack1OverPush = stackOut1.size();
         Stack<Integer> stackOut = new Stack<Integer>();
         for (int i = 0; i < stack1OverPush; i++){
             int stack1Pop = stackTemp.pop();
@@ -52,15 +56,14 @@ public class TwoStackToQue {
         System.out.println("");
 
         System.out.print("stack2中的元素为 ");
-        stackTemp = t.stack2;
-        int stack2OverPush = t.stack2.size();
+        stackTemp = stackOut2;
+        int stack2OverPush = stackOut2.size();
         for (int j = 0; j < stack2OverPush; j++){
             int stack2Pop = stackTemp.pop();
             System.out.print(stack2Pop + " ");
             stackOut.push(stack2Pop);
         }
     }
-
 
     public void push(int node) {
         stack1.push(node);
