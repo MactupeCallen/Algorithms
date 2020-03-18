@@ -1,4 +1,4 @@
-# niukeCode
+# Algorithm
 
 此项目为自己练习题：
 
@@ -13,3 +13,5 @@ PrintList：输入一个链表，按链表从尾到头的顺序返回一个Array
 rebulidBinaryTree：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树：
 
 ReplaceBlank：将字符串中的空格替换为其他字符；
+
+TreeRoad：关于二叉树的各种遍历，以及深度与节点个数方法
