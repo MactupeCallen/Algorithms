@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author mactupe
  *
  */
-class RebulidBinaryTree {
+public class RebulidBinaryTree {
 	
 	public static void main(String[] args) {
 		int[] pre = {1,2,4,7,3,5,6,8};
