@@ -1,4 +1,4 @@
-# niukeCode
+# algorithm
 
 此项目为自己练习题：
 
