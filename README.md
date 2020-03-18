@@ -15,3 +15,5 @@ rebulidBinaryTree：输入某二叉树的前序遍历和中序遍历的结果，
 ReplaceBlank：将字符串中的空格替换为其他字符；
 
 TreeRoad：关于二叉树的各种遍历，以及深度与节点个数方法
+
+TwoStackToQue：用两个栈来实现一个队列，完成队列的Push和Pop操作
