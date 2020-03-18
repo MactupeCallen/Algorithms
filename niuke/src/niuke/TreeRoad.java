@@ -26,19 +26,20 @@ public class TreeRoad {
         treeNode.right.right =  new TreeNode(7);
 
         preTreeRoad(treeNode);
-        System.out.println(preTreeStr);
+        System.out.println("本二叉树的前序遍历结果为：" + preTreeStr);
         inTreeRoad(treeNode);
-        System.out.println(inTreeStr);
+        System.out.println("本二叉树的中序遍历结果为：" +inTreeStr);
         posTreeRoad(treeNode);
-        System.out.println(posTreeStr);
+        System.out.println("本二叉树的后序遍历结果为：" +posTreeStr);
 
-        System.out.println(deepOfTree(treeNode));
+        System.out.println("本二叉树的深度为：" +deepOfTree(treeNode));
+        System.out.println("本二叉树的所有节点数为：" +nodeNum(treeNode));
     }
 
     //二叉树的前序遍历
     public static void preTreeRoad(TreeNode treeNode){
         if (null != treeNode){
-            preTreeStr = preTreeStr + " " + treeNode.getVal();
+            preTreeStr = preTreeStr + "-" + treeNode.getVal();
             preTreeRoad(treeNode.left);
             preTreeRoad(treeNode.right);
         }
@@ -47,7 +48,7 @@ public class TreeRoad {
     public static void inTreeRoad(TreeNode treeNode){
         if (null != treeNode){
             inTreeRoad(treeNode.left);
-            inTreeStr = inTreeStr + " "  + treeNode.getVal();
+            inTreeStr = inTreeStr + "-"  + treeNode.getVal();
             inTreeRoad(treeNode.right);
         }
     }
@@ -56,7 +57,7 @@ public class TreeRoad {
         if (null != treeNode){
             posTreeRoad(treeNode.left);
             posTreeRoad(treeNode.right);
-            posTreeStr = posTreeStr + " "  + treeNode.getVal();
+            posTreeStr = posTreeStr + "-"  + treeNode.getVal();
         }
     }
 
@@ -72,6 +73,19 @@ public class TreeRoad {
 
     //二叉树的宽度
     public static int widthOfTree(TreeNode treeNode){
+        int returnWidth = 0;
+        return returnWidth;
+    }
 
+    public static int returnNodeNum = 0;
+    //二叉树的所有节点
+    public static int nodeNum(TreeNode treeNode){
+        if (null == treeNode){
+            return returnNodeNum;
+        }
+        returnNodeNum ++;
+        returnNodeNum = nodeNum(treeNode.left);
+        returnNodeNum = nodeNum(treeNode.right);
+        return returnNodeNum;
     }
 }
