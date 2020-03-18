@@ -1,6 +1,6 @@
-package niuke;
+package Algorithm;
 
-import niuke.domain.TreeNode;
+import Algorithm.domain.TreeNode;
 
 import java.util.Arrays;
 

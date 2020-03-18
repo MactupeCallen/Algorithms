@@ -1,4 +1,4 @@
-package niuke.domain;
+package Algorithm.domain;
 
 public class TreeNode {
 	int val;

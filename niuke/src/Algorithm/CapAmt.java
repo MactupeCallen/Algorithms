@@ -1,8 +1,6 @@
-package niuke;
+package Algorithm;
 
-import java.awt.*;
 import java.util.HashMap;
-import java.util.Arrays;
 
 public class CapAmt {
 

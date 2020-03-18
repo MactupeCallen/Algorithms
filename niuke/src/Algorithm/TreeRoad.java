@@ -1,7 +1,6 @@
-package niuke;
+package Algorithm;
 
-import apple.laf.JRSUIUtils;
-import niuke.domain.TreeNode;
+import Algorithm.domain.TreeNode;
 
 /**
  * 1。对二叉树进行前序，中序，后序遍历，

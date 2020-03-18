@@ -1,4 +1,4 @@
-package niuke;
+package Algorithm;
 
 public class ReplaceBlank {
 

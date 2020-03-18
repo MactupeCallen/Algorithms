@@ -1,4 +1,4 @@
-package niuke;
+package Algorithm;
 
 /**
  * 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，

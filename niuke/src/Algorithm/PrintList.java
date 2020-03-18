@@ -1,6 +1,6 @@
-package niuke;
+package Algorithm;
 
-import niuke.domain.ListNode;
+import Algorithm.domain.ListNode;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package niuke;
+package Algorithm;
 
 import java.util.HashMap;
 import java.util.Map;
