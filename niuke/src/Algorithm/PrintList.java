@@ -21,17 +21,18 @@ import java.util.ArrayList;
  */
 public class PrintList {
 
-	public void main (String[] args) {
+	private static ArrayList<Integer> arr=new ArrayList<Integer>();
+
+	public static void main (String[] args) {
 		ListNode listNode = new ListNode(123);
 		ArrayList<Integer> arr = printListFromTailToHead(listNode);
 		System.out.println(arr.toString());
 	}
 	
-	ArrayList<Integer> arr=new ArrayList<Integer>();
-    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+    public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         if(listNode!=null)
         {
-            this.printListFromTailToHead(listNode.next);
+            printListFromTailToHead(listNode.next);
             arr.add(listNode.val);
         }
         return arr;
