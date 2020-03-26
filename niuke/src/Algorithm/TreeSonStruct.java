@@ -34,7 +34,7 @@ public class TreeSonStruct {
         TreeNode othTreeNode = new TreeNode(2);
         othTreeNode.left = new TreeNode(3);
         othTreeNode.right = new TreeNode(4);
-        System.out.println(HasSubtree(sonTreeNode1, treeNode));
+        System.out.println("匹配结果为" + HasSubtree(sonTreeNode1, treeNode));
     }
     public static boolean HasSubtree(TreeNode root1, TreeNode root2) {
 
