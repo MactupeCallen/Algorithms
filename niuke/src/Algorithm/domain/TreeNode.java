@@ -1,10 +1,10 @@
 package Algorithm.domain;
 
 public class TreeNode {
-	int val;
-	public TreeNode left;
-	public TreeNode right;
-	public TreeNode(int x) { val = x; }
+	public int val = 0;
+	public TreeNode left = null;
+	public TreeNode right = null;
+	public TreeNode(int val) { this.val = val; }
 
 	public int getVal() {
 		return val;
