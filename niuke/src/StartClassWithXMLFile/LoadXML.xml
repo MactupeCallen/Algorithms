@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE classMaps[
+        <!ELEMENT classMaps (classMap*)>
+        <!ELEMENT classMap (#PCDATA)>
+        ]>
+
+<classMaps>
+    <classMap>StartClassWithXMLFile/Banana</classMap>
+    <classMap>StartClassWithXMLFile/Apple</classMap>
+    <classMap>StartClassWithXMLFile/Orange</classMap>
+</classMaps>
